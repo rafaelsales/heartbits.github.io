@@ -2,10 +2,10 @@
 
 <style type="text/css">
 {% capture include_to_scssify %}
-{% if site.theme.highlight_color && site.theme.highlight_color != '' %}
-a, .post-title a { color: {{ site.theme.highlight_color }};}
+{% if site.theme.link_color && site.theme.link_color != '' %}
+a, .post-title a { color: {{ site.theme.link_color }};}
 
-a:hover { border-bottom-color: {{ site.theme.highlight_color }};}
+a:hover { border-bottom-color: {{ site.theme.link_color }};}
 .sidebar { background-color: {{ site.theme.highlight_color }};}
 
 .wc-top, .sidebar-toggle:active,

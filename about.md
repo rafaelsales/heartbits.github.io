@@ -2,23 +2,16 @@
 layout: page
 title: About me
 permalink: /about/
-banner_image: sample-banner-image-2.jpg
-banner_image_alt: About me
 ---
 
-Hi, I am Tom Warlker. I am a professional UI/UX designrer and web developer. I love being minimal and creative.
+Hi, I am Rafael Sales, Brazilian, graduated in Computer Science with 7 years of experience in
+software/web development, mostly with Ruby and Java.
 
-I prefer to serve with Php and Ruby based stacks and also love to work 
-on [Jekyll][jekyll] and [Processwire CMS/CMF][pw].
+I'm currently working as Software Engineer remotely for [Stack Builders Inc.](http://stackbuilders.com),
+writing mostly Ruby and JavaScript, and helping the company become better at Agile.
 
 ### Contact me
 
-Say `Hello` at gayanvirajith@gmail.com or find
-me on
-
----
+Say `Hello` at **rafaelcds** *at* **gmail** *dot* **com** or find me on
 
 {% include social.html %}
-
-[pw]: http://processwire.com
-[jekyll]: http://jekyllrb.com

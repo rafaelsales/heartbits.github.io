@@ -53,19 +53,11 @@ layout: default
     </div>
   {% endif %}
 
-  <div class="author-info">
-    {% if site.theme.show_author_info %}
-      {% include author.html %}
-    {% endif %}
-  
-    {% if site.theme.show_share_buttons %}
-      {% include share-buttons.html %}
-    {% endif %}  
-  </div>
-  
+  {% include author-widget.html %}
+
   {% if page.comments %}
     <div class="comments">
-        <a href="javascript:;" class="load-view">View Comments...</a>
+        <a name="comments" href="javascript:;" class="load-view">View Comments...</a>
         <div id="disqus_thread"></div>
         <div id="g-comments"></div>
     </div>

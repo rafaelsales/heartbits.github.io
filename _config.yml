@@ -1,27 +1,29 @@
 # Site settings
-title: Your awesome title
-tagline: And Tagline
-email: gayanvirajith@gmail.com
+title: Heart Bits
+tagline:
+email: rafaelcds at gmail dot com
 description: > # this means to ignore newlines until "baseurl:"
-  Hi, I’m a professional UI/UX designrer and web developer. 
-  I love being minimal and creative.
-baseurl: "/gaya" # the subpath of your site, e.g. /blog/
-url: "http://gayan.me" # the base hostname & protocol for your site
+  Hi, I’m Rafael Sales. I work as software engineer, specialized in Ruby, Java and JavaScript.
+  I code tested, clean, fast, maintainable, and secure bits.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://heartbits.github.io" # the base hostname & protocol for your site
 logourl: /assets/images/logo.png # Site logo
-author: "Tom Warlker"
+author: "Rafael Sales"
 author_thumbnail: "/assets/images/avatar.jpg" # Author avatar
 # Theme customization - please change from the defaults!
 theme:
   # Color for sidebar bar, links, etc
-  highlight_color: "#205081" #205081" # "#272935"
+  highlight_color: "#205081" #"#205081" "#272935"
+  link_color: "#1331AB"
   # Social media links, leave blank to ignore
-  social: 
-    github: gayanvirajith
-    twitter: gayanvirajith
-    facebook: gayanvirajith
-    gplus: +gayanvirajith
+  social:
+    github: rafaelsales
+    twitter: rafaelsales
+    facebook: rafaelcds
+    linkedin: rafasales
+    # gplus: +gayanvirajith
     # dribble: gayanvirajith
-    pinterest: gayanvirajith
+    # pinterest: gayanvirajith
 
   # Enable share buttons on post footer
   show_share_buttons: true
@@ -30,14 +32,17 @@ theme:
   show_author_info: true
 
   # Disqus comments manager - shortname
-  # disqus_shortname: gaya-webcreate
+  disqus_shortname: heartbits
 
   # Google Analytics/Webmaster key, leave blank to ignore
-  google_analytics_key: 
-  google_webmaster_key: 
+  google_analytics_key: 60750338
+  google_webmaster_key:
 
 # Build settings
-markdown: kramdown
+markdown: redcarpet
+
+redcarpet:
+  extensions: ["lax_spacing", "smart", "no_intra_emphasis", "tables", "fenced_code_blocks", "autolink", "disable_indented_code_blocks", "strikethrough", " space_after_headers", "superscript", "footnotes"]
 
 # Permalinks
 permalink:        pretty
@@ -46,7 +51,7 @@ permalink:        pretty
 paginate: 5
 
 # Files/Folders to be excluded from generated _site folder
-exclude: 
+exclude:
   - CNAME
   - Gemfile
   - Rakefile

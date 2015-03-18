@@ -35,7 +35,7 @@ theme:
   disqus_shortname: heartbits
 
   # Google Analytics/Webmaster key, leave blank to ignore
-  google_analytics_key: 60750338
+  #google_analytics_key:
   google_webmaster_key:
 
 # Build settings

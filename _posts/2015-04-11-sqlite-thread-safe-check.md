@@ -15,20 +15,19 @@ is acessing a database on a multithreaded application server, such as
 [Sidekiq](http://sidekiq.org).
 
 When running code that access database on such multithreaded environments, we should
-always evaluate if the database is ready to work with accept connections from multiple
+always evaluate if the database is ready to accept connections from multiple
 threads and, sometimes, if a single connection can be shared with multiple threads.
 
 ### A real scenario
 
 Recently I was working on an application that uses in-memory SQLite and the team decided
-to migration from [Resque](https://github.com/resque/resque) - *a process-based background
+to migrate from [Resque](https://github.com/resque/resque) - *a process-based background
 processing framework* - to Sidekiq, which is thread-based. This change begs the question:
-question: **Is SQLite thread-safe?** Well, it depends.
 
 ### Is SQLite thread-safe?
 
-SQLite was build to work on three diferent modes in this regard and depends on
-a compilation flag named `THREADSAFE`. It can have three values:
+SQLite was built to work on three diferent modes in this regard and the mode is defined
+by a compilation flag named `THREADSAFE`. It can have three values:
 
 * `THREADSAFE=0`: It's unsafe to use SQLite in a multithreaded application - it ommits all
 [mutexing](http://en.wikipedia.org/wiki/Mutual_exclusion) code on the compiled code;

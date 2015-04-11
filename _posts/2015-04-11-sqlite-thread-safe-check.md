@@ -39,6 +39,18 @@ must be used by a single thread at a time.
 
 ### Checking thread-safety level of SQLite installation
 
+#### **In Ruby**
+
+Open interactive Ruby console: `$ irb` and execute:
+
+```ruby
+SQLite3::Database.new(":memory:").
+  execute("PRAGMA compile_options").
+  map(&:first).find { |option| option =~ /THREADSAFE/ }
+
+# This will produce an output like "THREADSAFE=2"
+```
+
 #### **On a C program**
 
 Create a file named `sqlite_threadsafe.c` with following content:

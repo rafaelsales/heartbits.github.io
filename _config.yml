@@ -6,7 +6,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Hi, I’m Rafael Sales. I work as software engineer, specialized in Ruby, Java and JavaScript.
   I code tested, clean, fast, maintainable, and secure bits.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://theheartbit.com" # the base hostname & protocol for your site
+url: "https://heartbits.github.io" # the base hostname & protocol for your site
 logourl: /assets/images/logo.png # Site logo
 author: "Rafael Sales"
 author_thumbnail: "/assets/images/avatar.jpg" # Author avatar

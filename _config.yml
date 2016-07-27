@@ -41,9 +41,6 @@ theme:
 # Build settings
 markdown: kramdown
 
-redcarpet:
-  extensions: ["lax_spacing", "smart", "no_intra_emphasis", "tables", "fenced_code_blocks", "autolink", "disable_indented_code_blocks", "strikethrough", " space_after_headers", "superscript", "footnotes"]
-
 # Permalinks
 permalink:        pretty
 
